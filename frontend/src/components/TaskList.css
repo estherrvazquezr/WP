@@ -1,0 +1,36 @@
+.dashboard-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .month-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: calc(33.333% - 20px); /* Ajusta el ancho según sea necesario */
+  }
+  
+  .month-box h2 {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dashed #ddd;
+  }
+  
+  .task:last-child {
+    border-bottom: none;
+  }
+  
+  .task span {
+    font-size: 1em;
+  }
+  

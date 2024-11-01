@@ -1,0 +1,154 @@
+/* Estilos generales para el dashboard */
+.dashboard {
+    display: flex;
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+  }
+  
+  /* Estilo para el contenido principal */
+  .main-content {
+    flex: 1; /* Toma el espacio restante */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Color de fondo */
+  }
+  
+  /* Estilos para la barra lateral */
+  .sidebar {
+    width: 250px; /* Ancho fijo para la barra lateral */
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-right: 1px solid #ddd; /* Línea de separación */
+    box-sizing: border-box;
+    position: sticky; /* Fija la barra lateral en la parte superior */
+    top: 0;
+    height: 100vh; /* Altura completa */
+    overflow-y: auto; /* Permite scroll si hay muchas tareas */
+  }
+  
+  /* Estilos para los encabezados de la barra lateral */
+  .sidebar h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos para las categorías de tareas en la barra lateral */
+  .task-category {
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo de los encabezados de cada categoría de tareas */
+  .task-category h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo de cada tarea en la barra lateral */
+  .task-item {
+    padding: 8px;
+    background-color: #ffffff; /* Color de fondo blanco */
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between; /* Espaciado entre nombre y botón */
+  }
+  
+  /* Estilo del botón de tareas */
+  .task-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4CAF50; /* Color verde para botones */
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Estilo para el contenedor de progreso */
+  .progress-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  /* Estilo de la barra de progreso */
+  .progress-bar {
+    background-color: #ddd;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin-right: 10px;
+  }
+  
+  /* Estilo de llenado de la barra de progreso */
+  .progress-bar-fill {
+    height: 15px;
+    border-radius: 8px;
+    background-color: #4CAF50; /* Color verde para la barra llena */
+    width: 0; /* Se ajustará dinámicamente */
+    transition: width 0.4s ease-in-out; /* Transición suave */
+  }
+  
+  /* Estilos para la cuadrícula de tareas */
+  .dashboard-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cajas se ajusten */
+    gap: 20px; /* Espacio entre las cajas */
+  }
+  
+  /* Estilo de cada caja de mes */
+  .month-box {
+    flex: 1 0 30%; /* Toma el 30% del ancho, se ajusta en pantallas más grandes */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Estilo para los títulos de cada caja de mes */
+  .month-box h2 {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo de cada tarea en la caja de mes */
+  .task {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre nombre y estado */
+    padding: 8px 0;
+    border-bottom: 1px dashed #ddd; /* Línea de separación */
+  }
+  
+  .task:last-child {
+    border-bottom: none; /* Sin línea en el último elemento */
+  }
+  
+  /* Estilo para los detalles de la tarea */
+  .details-panel {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
+  .details-panel h2 {
+    margin-top: 0;
+  }
+  
+  .details-panel textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  
